@@ -3,15 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3380800B388A6E432009CF /* Pods_Wand_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B825ADCB3F96EB541FDFBFCA /* Pods_Wand_study.framework */; };
 		AE12848223824744001FFF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE12848123824744001FFF97 /* AppDelegate.swift */; };
 		AE12848423824744001FFF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE12848323824744001FFF97 /* ViewController.swift */; };
 		AE12848723824744001FFF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE12848523824744001FFF97 /* Main.storyboard */; };
 		AE12848923824746001FFF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE12848823824746001FFF97 /* Assets.xcassets */; };
 		AE12848C23824746001FFF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE12848A23824746001FFF97 /* LaunchScreen.storyboard */; };
+		AE12849423824965001FFF97 /* SpellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE12849323824965001FFF97 /* SpellData.swift */; };
+		AE12849623824990001FFF97 /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE12849523824990001FFF97 /* Spells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		AE12848823824746001FFF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE12848B23824746001FFF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE12848D23824746001FFF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE12849323824965001FFF97 /* SpellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellData.swift; sourceTree = "<group>"; };
+		AE12849523824990001FFF97 /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		B825ADCB3F96EB541FDFBFCA /* Pods_Wand_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wand_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA098150BB4BE3444C9653DD /* Pods-Wand-study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wand-study.debug.xcconfig"; path = "Target Support Files/Pods-Wand-study/Pods-Wand-study.debug.xcconfig"; sourceTree = "<group>"; };
+		E7005B7B3330E7AD8B403BB5 /* Pods-Wand-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wand-study.release.xcconfig"; path = "Target Support Files/Pods-Wand-study/Pods-Wand-study.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F3380800B388A6E432009CF /* Pods_Wand_study.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D6C461D4138A326FA50AC29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA098150BB4BE3444C9653DD /* Pods-Wand-study.debug.xcconfig */,
+				E7005B7B3330E7AD8B403BB5 /* Pods-Wand-study.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE12847523824743001FFF97 = {
 			isa = PBXGroup;
 			children = (
 				AE12848023824744001FFF97 /* Wand-study */,
 				AE12847F23824743001FFF97 /* Products */,
+				8D6C461D4138A326FA50AC29 /* Pods */,
+				B84C1239AED7ABCB18EC4531 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				AE12848123824744001FFF97 /* AppDelegate.swift */,
+				AE12849323824965001FFF97 /* SpellData.swift */,
+				AE12849523824990001FFF97 /* Spells.swift */,
 				AE12848323824744001FFF97 /* ViewController.swift */,
 				AE12848523824744001FFF97 /* Main.storyboard */,
 				AE12848823824746001FFF97 /* Assets.xcassets */,
@@ -64,6 +86,14 @@
 			path = "Wand-study";
 			sourceTree = "<group>";
 		};
+		B84C1239AED7ABCB18EC4531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B825ADCB3F96EB541FDFBFCA /* Pods_Wand_study.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE12849023824746001FFF97 /* Build configuration list for PBXNativeTarget "Wand-study" */;
 			buildPhases = (
+				0712177F2025426F32930C02 /* [CP] Check Pods Manifest.lock */,
 				AE12847A23824743001FFF97 /* Sources */,
 				AE12847B23824743001FFF97 /* Frameworks */,
 				AE12847C23824743001FFF97 /* Resources */,
+				72114460AF306905F5AB3C22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +162,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0712177F2025426F32930C02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wand-study-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72114460AF306905F5AB3C22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wand-study/Pods-Wand-study-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wand-study/Pods-Wand-study-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wand-study/Pods-Wand-study-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE12847A23824743001FFF97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE12849423824965001FFF97 /* SpellData.swift in Sources */,
 				AE12848423824744001FFF97 /* ViewController.swift in Sources */,
+				AE12849623824990001FFF97 /* Spells.swift in Sources */,
 				AE12848223824744001FFF97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +356,7 @@
 		};
 		AE12849123824746001FFF97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA098150BB4BE3444C9653DD /* Pods-Wand-study.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		AE12849223824746001FFF97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7005B7B3330E7AD8B403BB5 /* Pods-Wand-study.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

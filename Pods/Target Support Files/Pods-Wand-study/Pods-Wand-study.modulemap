@@ -1,0 +1,6 @@
+framework module Pods_Wand_study {
+  umbrella header "Pods-Wand-study-umbrella.h"
+
+  export *
+  module * { export * }
+}
